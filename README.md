@@ -2,4 +2,4 @@
 
 Below are my school assignments from the 2025 Winter quarter of the University of Washington's [Full-Stack Development With JavaScript" certificate program](https://www.pce.uw.edu/certificates/full-stack-development-with-javascript) :
 
-* Class 1
+* [Class 1](./Class1/README.md)
