@@ -28,3 +28,8 @@ describe('DivElement class', () => {
     expect(div.render()).toEqual('<div>University of Washington</div>');
   });
 });
+
+
+
+
+// To receive credit, this file should meet all criteria noted in the README. Specifically, the DivElement should inherit from HTMLElement, call HTMLElement's constructor, and use HTMLElement's render function.
