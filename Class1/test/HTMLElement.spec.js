@@ -27,7 +27,3 @@ describe('HTMLElement class', () => {
     expect(paragraph.render()).toEqual('<p>Hello</p>');
   });
 });
-
-
-
-// To receive credit, this file should meet all criteria noted in the README.
