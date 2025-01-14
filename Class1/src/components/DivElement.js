@@ -12,9 +12,7 @@ See the README for an example.
 // //////////////////////// //
 // Import HTMLElement here //
 // ////////////////////// //
-
-// eslint-disable-next-line import/named, import/extensions
-import { HTMLElement } from './HTMLElement.js';
+import HTMLElement from './HTMLElement';
 
 // ////////////////// //
 // Define class here //
@@ -40,4 +38,4 @@ class DivElement extends HTMLElement {
 // ////////////////// //
 // Export class here //
 // //////////////// //
-export default { DivElement };
+export default DivElement;
