@@ -23,17 +23,13 @@ class DivElement extends HTMLElement {
     this.content = content;
     this.tag = 'div';
   }
-
-  render() {
-    return `<div>${this.content}</div>`;
-  }
 }
 
 // //////// //
 // Testing //
 // ////// //
 // const andIThinkToMyself = new DivElement('What a wonderful world');
-// console.log('\n')
+// console.log('\n');
 // console.log(andIThinkToMyself.render());
 
 // ////////////////// //
