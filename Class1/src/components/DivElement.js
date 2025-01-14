@@ -13,10 +13,31 @@ See the README for an example.
 // Import HTMLElement here //
 // ////////////////////// //
 
+// eslint-disable-next-line import/named, import/extensions
+import { HTMLElement } from './HTMLElement.js';
+
 // ////////////////// //
 // Define class here //
 // //////////////// //
+class DivElement extends HTMLElement {
+  constructor(content) {
+    super(content);
+    this.content = content;
+  }
+
+  render() {
+    return `<div>${this.content}</div>`;
+  }
+}
+
+// //////// //
+// Testing //
+// ////// //
+// const andIThinkToMyself = new DivElement('What a wonderful world');
+// console.log('\n')
+// console.log(andIThinkToMyself.render());
 
 // ////////////////// //
 // Export class here //
 // //////////////// //
+export default { DivElement };
