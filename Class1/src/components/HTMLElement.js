@@ -16,7 +16,7 @@
 // /////////////////////
 // Define class here //
 // ///////////////////
-export class HTMLElement {
+class HTMLElement {
   constructor(tag, content) {
     this.tag = tag;
     this.content = content;
@@ -38,4 +38,4 @@ export class HTMLElement {
 // Change what is below to export the class //
 // instead of an empty object literal.     //
 // /////////////////////////////////////////
-export default { HTMLElement };
+export default HTMLElement;
