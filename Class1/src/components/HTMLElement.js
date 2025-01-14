@@ -16,23 +16,22 @@
 // /////////////////////
 // Define class here //
 // ///////////////////
-class HTMLElement {
+export class HTMLElement {
   constructor(tag, content) {
     this.tag = tag;
     this.content = content;
   }
 
   render() {
-    console.log(`HTML generated will be: ${this.tag} ${this.content}`);
-    return this.tag + this.content;
+    return `<${this.tag}>${this.content}</${this.tag}>`;
   }
 }
 
 // ///////////
 // Testing //
 // /////////
-const testingHTMLGenerator = new HTMLElement('<h1>', 'Test header');
-testingHTMLGenerator.render();
+// const testingHTMLGenerator = new HTMLElement('h1', 'Test header');
+// console.log('\n', testingHTMLGenerator.render(), '\n');
 
 // /////////////////////////////////////////////
 // Export class here.                        //

@@ -1,41 +1,43 @@
 /* INSTRUCTIONS:
-  Create a module that meets the following requirements:
-    1. Create a class called HTMLElement.
-        This class should have a constructor with two parameters:  tag and content.
-          Both of these parameters should be stored as instance variables within the class.
-        Instance variables should have the same names as the parameters.
-
-    2. Once the HTMLElement class is created, add a function to the class called render
-        It should be possible to call the render function publicly.
-        This function should return the HTML element with the content provided.
-        Within 'render', use a template literal to render the element.
-
-  See the README for an example.
+Create a module that meets the following requirements:
+  1. Create a class called 'DivElement' that extends the 'HTMLElement' class created previously.
+     You'll need to import the class made in that file.
+     The new class should have a constructor with one parameter: content
+     The new class should inherit the 'render' function in the parent class
+      (do not override it, aka define it in 'DivElement').
+  2. Within the 'render' function, use a template literal to render the element.
+See the README for an example.
 */
 
-// /////////////////////
+// //////////////////////// //
+// Import HTMLElement here //
+// ////////////////////// //
+
+// eslint-disable-next-line import/named, import/extensions
+import { HTMLElement } from './HTMLElement.js';
+
+// ////////////////// //
 // Define class here //
-// ///////////////////
-export class HTMLElement {
-  constructor(tag, content) {
-    this.tag = tag;
+// //////////////// //
+class DivElement extends HTMLElement {
+  constructor(content) {
+    super(content);
     this.content = content;
   }
 
   render() {
-    return `<${this.tag}>${this.content}</${this.tag}>`;
+    return `<div>${this.content}</div>`;
   }
 }
 
-// ///////////
+// //////// //
 // Testing //
-// /////////
-// const testingHTMLGenerator = new HTMLElement('h1', 'Test header');
-// console.log('\n', testingHTMLGenerator.render(), '\n');
+// ////// //
+// const andIThinkToMyself = new DivElement('What a wonderful world');
+// console.log('\n')
+// console.log(andIThinkToMyself.render());
 
-// /////////////////////////////////////////////
-// Export class here.                        //
-// Change what is below to export the class //
-// instead of an empty object literal.     //
-// /////////////////////////////////////////
-export default { HTMLElement };
+// ////////////////// //
+// Export class here //
+// //////////////// //
+export default { DivElement };
