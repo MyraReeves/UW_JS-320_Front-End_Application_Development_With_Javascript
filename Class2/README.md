@@ -83,3 +83,7 @@ Ensure that your UI meets the following criteria:
 
 * Make each card clickable. Upon clicking a card title/description/image, the browser should open the link for the article.
 * Make each bookmark component clickable. Upon clicking a bookmark, the bookmark icon should turn green. Clicking the bookmark again will reset to the original state (no color). It's recommended to use React state to implement this behavior.
+
+## Grading
+
+![Screenshot of grading criteria](Screenshot-grading.png)
