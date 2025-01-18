@@ -6,4 +6,4 @@ Below are my school assignments from the 2025 Winter quarter of the University o
 
 * [Class 2 - Intro to React](./Class2/README.md)
 
-* [Class 1 - Linters & ECMAScript syntax](./Class1/README.md)
+* [Class 1 - Npm, Node.js, linters, & ECMAScript syntax](./Class1/README.md)
