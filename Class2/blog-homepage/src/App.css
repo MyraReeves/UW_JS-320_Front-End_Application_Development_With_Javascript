@@ -1,19 +1,13 @@
-#root {
-  max-width: 1280px;
-  padding: 2rem;
+html,
+body {
+  max-height: 90%;
+  margin: 0;
+  /* overflow: hidden; */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#root {
+  max-width: 1280px;
+  padding: 2rem 10px;
 }
 
 @keyframes logo-spin {
@@ -46,4 +40,65 @@ div {
 
 h2 {
   text-align: left;
+}
+
+.for-you, .missed-it {
+  margin: 20px 20px 20px 0;
+  border: solid 1px lightgray;
+}
+
+.for-you {
+  width: 50%;
+}
+
+.missed-it {
+  width: 25%;
+}
+
+.for-you div, .missed-it div {
+  padding: 10px 0;
+  color: rgb(126, 126, 126);
+  height: 290px;
+}
+
+.missed-it div {
+  margin: 10px 20px;
+}
+
+.for-you h2, .missed-it h2 {
+  margin: 1px;
+  color: black;
+}
+
+.for-you .previewPic {
+  float: left;
+  margin-right: 40px;
+  height: 300px;
+}
+
+.missed-it .previewPic {
+  width: 100%;
+  /* max-height: 100px; */
+}
+
+.bottomOfDiv {
+  color: rgb(126, 126, 126);
+  margin-top: 30px;
+}
+
+.bottomOfDiv img {
+  float: left;
+  margin-right: 10px;
+}
+
+.bottomOfDiv h4{
+  padding-top: 8px;
+  margin: 0 0 5px 0;
+  font-size: 12pt;
+  color: black;
+}
+
+.authorPic {
+  border-radius: 50%;
+  height: 80px;
 }
