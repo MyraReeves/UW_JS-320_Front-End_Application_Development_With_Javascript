@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 function Picture(props) {
   const {imgSrc, imgAlt} = props;
 
-  console.log(props)
-
   return (
         <img className="previewPic" src={imgSrc}  alt={imgAlt}/>
   )
