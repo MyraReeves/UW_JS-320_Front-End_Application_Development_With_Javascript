@@ -38,24 +38,40 @@ div {
   padding-bottom: 30px;
 }
 
+.bottom-third {
+  height: 30%;
+}
+
 h2 {
   text-align: left;
 }
 
-.for-you, .missed-it {
-  margin: 20px 20px 20px 0;
+.for-you .eachArticle, .missed-it .eachArticle {
   border: solid 1px lightgray;
+  display: inline-block;
+  padding: 0;
+  margin: 15px 15px 0 0;
 }
 
-.for-you {
-  width: 50%;
+.for-you .eachArticle{
+  width: 45%;
 }
 
-.missed-it {
-  width: 25%;
+.missed-it .eachArticle{
+  width: 30%;
 }
 
-.for-you div, .missed-it div {
+.articleInfo {
+  margin: 3px 5px 10px 0;
+  padding: 0;
+}
+
+.articleInfo p, .missed-it p{
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+.for-you div {
   padding: 10px 0;
   color: rgb(126, 126, 126);
   height: 290px;
@@ -68,12 +84,19 @@ h2 {
 .for-you h2, .missed-it h2 {
   margin: 1px;
   color: black;
+  line-height: 1;
 }
 
 .for-you .previewPic {
   float: left;
-  margin-right: 40px;
-  height: 300px;
+  margin-right: 30px;
+  height: 100%;
+  width: 40%;
+  overflow: hidden;
+}
+
+.for-you .previewPic img{
+  overflow: hidden;
 }
 
 .missed-it .previewPic {
@@ -81,24 +104,36 @@ h2 {
   /* max-height: 100px; */
 }
 
-.bottomOfDiv {
+.for-you .bottomOfDiv, .missed-it .bottomOfDiv {
   color: rgb(126, 126, 126);
   margin-top: 30px;
+  /* position: absolute;
+  bottom: 0; */
 }
 
-.bottomOfDiv img {
+.for-you .bottomOfDiv img, .missed-it .bottomOfDiv img {
   float: left;
   margin-right: 10px;
 }
 
-.bottomOfDiv h4{
+.for-you .bottomOfDiv h4, .missed-it .bottomOfDiv h4{
   padding-top: 8px;
   margin: 0 0 5px 0;
   font-size: 12pt;
   color: black;
 }
 
-.authorPic {
+.for-you .authorPic, .missed-it .authorPic {
   border-radius: 50%;
   height: 80px;
+}
+
+.for-you .bookmarkIcon, .missed-it .bookmarkIcon {
+  float: right;
+  height: 20px;
+  width: 25px;
+}
+
+.for-you .bookmarkIcon img , .missed-it .bookmarkIcon img{
+  float: right;
 }
