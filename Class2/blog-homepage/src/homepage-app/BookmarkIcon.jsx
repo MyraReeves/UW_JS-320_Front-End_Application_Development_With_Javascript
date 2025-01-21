@@ -4,7 +4,7 @@ function BookmarkIcon(props) {
   const {imgSrc, imgAlt} = props;
 
   return (
-        <img className="bookmarkIcon" src={imgSrc}  alt={imgAlt}/>
+        <img className="bookmarkIcon" src={imgSrc}  alt={imgAlt} style={{float: 'right'}}/>
   )
 }
 
