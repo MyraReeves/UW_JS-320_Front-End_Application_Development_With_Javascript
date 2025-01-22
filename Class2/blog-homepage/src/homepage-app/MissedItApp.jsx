@@ -1,18 +1,13 @@
-import { useState } from "react"
-
-
+import MissedItArticle from "./MissedItArticle"
 
 function MissedItApp() {
   const header = "In case you missed it"
-
-  // const [image, setimages] = useState([''])
-  // const [title, settitles] = useState('')
 
   return (
     <>
       <h2>{header}</h2>
       <hr/>
-
+      <MissedItArticle />
     </>
   )
 }
