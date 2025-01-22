@@ -44,7 +44,7 @@ Picture.propTypes = {
 }
 
 MemberPreview.propTypes = {
-  booleanValue: PropTypes.bool.isRequired,
+  boolean: PropTypes.bool.isRequired,
 }
 
 DateConversion.propTypes = {
