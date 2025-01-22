@@ -3,11 +3,10 @@ import Picture from './PreviewPicture'
 import AuthorPicture from "./AuthorPicture";
 import BookmarkIcon from "./BookmarkIcon";
 import missedArticles from './missed-articles.json'
+import MemberPreview from './MemberPreview';
 
 function MissedItArticle(props) {
-  // const articlePreview = 'https://placehold.co/402x519'
   const articleAlt = 'Preview image of article'
-  // const authorPic = 'https://www.kindpng.com/picc/m/722-7221920_placeholder-profile-image-placeholder-png-transparent-png.png'
   const authorAlt = 'Small round image of the author'
   const bookmarkImage = 'https://cdn-icons-png.flaticon.com/512/494/494568.png'
   const bookmarkAlt = 'Small icon of a bookmark'
@@ -18,7 +17,9 @@ function MissedItArticle(props) {
         <div className="eachArticle" key={index} style={{display: 'inline-block'}}>
           <Picture imgSrc={missedArticles.image} imgAlt={articleAlt} />
           <div className="articleInfo">
-            {/* <p>Audio available</p> */}
+
+            <MemberPreview boolean={missedArticles.memberPreview}/>
+
             <h2>{missedArticles.title}</h2>
             <p>{missedArticles.description}</p>
             <div className="bottomOfDiv">
