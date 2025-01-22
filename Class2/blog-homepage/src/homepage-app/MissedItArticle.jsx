@@ -1,11 +1,12 @@
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import Picture from './PreviewPicture'
 import AuthorPicture from "./AuthorPicture";
 import BookmarkIcon from "./BookmarkIcon";
 import missedArticles from './missed-articles.json'
 import MemberPreview from './MemberPreview';
+import DateConversion from "./DateConversion";
 
-function MissedItArticle(props) {
+function MissedItArticle() {
   const articleAlt = 'Preview image of article'
   const authorAlt = 'Small round image of the author'
   const bookmarkImage = 'https://cdn-icons-png.flaticon.com/512/494/494568.png'
@@ -25,8 +26,8 @@ function MissedItArticle(props) {
             <div className="bottomOfDiv">
               <AuthorPicture className="authorPic" imgSrc={missedArticles.author.image} imgAlt={authorAlt} />
               <h4>{missedArticles.author.name}</h4>
-              {/* <script>new Date({missedArticles.postedDate}).toDateString()</script> */}
-              • {missedArticles.minutesToRead} min read
+
+              <DateConversion date={missedArticles.postedDate}/> • {missedArticles.minutesToRead} min read
               <BookmarkIcon imgSrc={bookmarkImage} imgAlt={bookmarkAlt} />
             </div>
           </div>
@@ -35,6 +36,19 @@ function MissedItArticle(props) {
       }
     </section>
   )
+}
+
+Picture.propTypes = {
+  imgSrc: PropTypes.string.isRequired,
+  imgAlt: PropTypes.string.isRequired,
+}
+
+MemberPreview.propTypes = {
+  booleanValue: PropTypes.bool.isRequired,
+}
+
+DateConversion.propTypes = {
+  date: PropTypes.string.isRequired,
 }
 
 export default MissedItArticle
