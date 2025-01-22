@@ -4,7 +4,7 @@ function MemberPreview(props) {
   const {boolean} = props;
 
   if (boolean) {
-    return <p id="MemPreview">★ Member preview</p>;
+    return <p className="MemPreview">★ Member preview</p>;
   }
   return null;
 

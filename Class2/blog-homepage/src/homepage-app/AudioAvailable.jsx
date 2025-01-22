@@ -4,7 +4,7 @@ function AudioAvailable(props) {
   const {booleanValue} = props;
 
   if (booleanValue) {
-    return <p id="audioPlaceholder">🔊 Audio available</p>;
+    return <p id="audioAvail">🔊 Audio available</p>;
   }
   return null;
 
