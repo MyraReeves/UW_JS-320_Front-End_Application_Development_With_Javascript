@@ -25,8 +25,8 @@ function MissedItArticle(props) {
             <div className="bottomOfDiv">
               <AuthorPicture className="authorPic" imgSrc={missedArticles.author.image} imgAlt={authorAlt} />
               <h4>{missedArticles.author.name}</h4>
-              <script>new Date({missedArticles.postedDate}).toDateString()</script> •
-              Article length {missedArticles.minutesToRead}
+              {/* <script>new Date({missedArticles.postedDate}).toDateString()</script> */}
+              • {missedArticles.minutesToRead} min read
               <BookmarkIcon imgSrc={bookmarkImage} imgAlt={bookmarkAlt} />
             </div>
           </div>
