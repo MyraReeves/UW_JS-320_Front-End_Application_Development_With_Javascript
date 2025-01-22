@@ -6,7 +6,7 @@ import yourArticles from './your-articles.json';
 import AudioAvailable from "./AudioAvailable";
 import DateConversion from "./DateConversion";
 
-function ForYouArticle(props) {
+function ForYouArticle() {
   const articleAlt = 'Preview image of article'
   const authorAlt = 'Small round image of the author'
   const bookmarkImage = 'https://cdn-icons-png.flaticon.com/512/494/494568.png'
@@ -26,9 +26,8 @@ function ForYouArticle(props) {
             <div className="bottomOfDiv">
               <AuthorPicture className="authorPic" imgSrc={yourArticles.author.image} imgAlt={authorAlt} />
               <h4>{yourArticles.author.name}</h4>
-              {/* <script>new Date({yourArticles.postedDate}).toDateString()</script> */}
-              {/* <DateConversion date={yourArticles.postedDate}/> */}
-               • {yourArticles.minutesToRead} min read
+
+              <DateConversion date={yourArticles.postedDate}/> • {yourArticles.minutesToRead} min read
               <BookmarkIcon imgSrc={bookmarkImage} imgAlt={bookmarkAlt} />
             </div>
           </div>
@@ -42,8 +41,14 @@ function ForYouArticle(props) {
 Picture.propTypes = {
   imgSrc: PropTypes.string.isRequired,
   imgAlt: PropTypes.string.isRequired,
+}
+
+AudioAvailable.propTypes = {
   booleanValue: PropTypes.bool.isRequired,
-  date: PropTypes.string.isRequired
+}
+
+DateConversion.propTypes = {
+  date: PropTypes.string.isRequired,
 }
 
 export default ForYouArticle
