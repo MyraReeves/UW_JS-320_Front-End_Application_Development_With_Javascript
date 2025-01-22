@@ -4,6 +4,7 @@ import AuthorPicture from "./AuthorPicture";
 import BookmarkIcon from "./BookmarkIcon";
 import yourArticles from './your-articles.json';
 import AudioAvailable from "./AudioAvailable";
+import DateConversion from "./DateConversion";
 
 function ForYouArticle(props) {
   const articleAlt = 'Preview image of article'
@@ -25,8 +26,9 @@ function ForYouArticle(props) {
             <div className="bottomOfDiv">
               <AuthorPicture className="authorPic" imgSrc={yourArticles.author.image} imgAlt={authorAlt} />
               <h4>{yourArticles.author.name}</h4>
-              <script>new Date({yourArticles.postedDate}).toDateString()</script> •
-              Article length {yourArticles.minutesToRead}
+              {/* <script>new Date({yourArticles.postedDate}).toDateString()</script> */}
+              {/* <DateConversion date={yourArticles.postedDate}/> */}
+               • {yourArticles.minutesToRead} min read
               <BookmarkIcon imgSrc={bookmarkImage} imgAlt={bookmarkAlt} />
             </div>
           </div>
@@ -41,6 +43,7 @@ Picture.propTypes = {
   imgSrc: PropTypes.string.isRequired,
   imgAlt: PropTypes.string.isRequired,
   booleanValue: PropTypes.bool.isRequired,
+  date: PropTypes.string.isRequired
 }
 
 export default ForYouArticle
