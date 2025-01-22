@@ -1,6 +1,4 @@
-import { useState } from "react"
-
-
+import ForYouArticle from "./ForYouArticle"
 
 function ForYouApp() {
   const header = "For you"
@@ -12,7 +10,7 @@ function ForYouApp() {
     <>
       <h2>{header}</h2>
       <hr/>
-
+      <ForYouArticle />
     </>
   )
 }
