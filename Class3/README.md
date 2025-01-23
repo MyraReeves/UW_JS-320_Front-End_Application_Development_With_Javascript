@@ -73,3 +73,7 @@ Ensure that your UI meets the following criteria:
     * Allow the user to view a form
     * Allow the user to enter vacation rental information, such as the title, image, price, etc.
     * Add the new rental to the list of vacation rentals being displayed
+
+## Grading
+
+![Screenshot of grading criteria from assignment on Canvas](ScreenshotClass3-Grading.jpg)
