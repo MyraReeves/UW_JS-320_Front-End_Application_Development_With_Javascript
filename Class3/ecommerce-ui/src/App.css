@@ -50,6 +50,7 @@
 
 h2 {
   margin-bottom: 3px;
+  font-family: Georgia;
 }
 
 .available-rentals {
@@ -67,6 +68,10 @@ h2 {
   cursor: pointer;
 }
 
+.each-rental-property:hover {
+  background-color: rgb(193, 192, 192);;
+}
+
 .productImage {
   width: 80%;
   border-radius: 20%;
@@ -77,13 +82,23 @@ h2 {
 }
 
 .rental-type {
-  color: rgb(144, 144, 144);
-  margin: 10px 0 0 15px;
+  color: rgb(132, 132, 132);
+  margin: 10px 0 0 20px;
   text-align: left;
 }
 
+.guest-rating {
+  margin: 0 0 0 20px;
+  text-align: left;
+  color: rgb(132, 132, 132);
+}
+
+.reviews {
+  color: black;
+}
+
 .host-info {
-  margin: 0 0 10px 15px;
+  margin: 0 0 10px 20px;
   text-align: left;
 }
 
