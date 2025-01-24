@@ -1,8 +1,7 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  /* margin: 0 auto;
+  padding: 2rem; */
 }
 
 .logo {
@@ -53,11 +52,43 @@ h2 {
   margin-bottom: 3px;
 }
 
+.available-rentals {
+  margin: 0;
+  padding: 0;
+}
+
+.each-rental-property {
+  width: 30%;
+  text-align: center;
+  background-color: rgb(229, 229, 229);
+  border: solid gray 1px;
+  border-radius: 10%;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.productImage {
+  width: 80%;
+  border-radius: 20%;
+}
+
+.rental-location {
+  margin: 5px 0 0 0;
+}
+
 .rental-type {
   color: rgb(144, 144, 144);
+  margin: 10px 0 0 15px;
+  text-align: left;
+}
+
+.host-info {
+  margin: 0 0 10px 15px;
+  text-align: left;
 }
 
 .superhost {
   color: darkblue;
   background-color: rgb(186, 234, 246);
+  margin-left: 15px;
 }
