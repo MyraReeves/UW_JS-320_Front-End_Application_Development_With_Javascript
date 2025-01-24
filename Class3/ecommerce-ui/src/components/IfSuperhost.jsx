@@ -4,7 +4,7 @@ function IfSuperhost(props) {
   const {booleanValue} = props;
 
   if (booleanValue) {
-    return <p className="superhost">✶ Superhost ✶</p>;
+    return <span className="superhost">✶ Superhost ✶</span>;
   }
   return null;
 }
