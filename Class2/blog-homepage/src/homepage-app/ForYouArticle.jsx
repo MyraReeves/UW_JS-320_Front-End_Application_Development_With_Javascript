@@ -16,24 +16,24 @@ function ForYouArticle() {
     <section className="for-you">
       {yourArticles.map( (yourArticles, index) => (
         <div className="eachArticle" key={index} style={{display: 'inline-block'}}>
+
           <Picture imgSrc={yourArticles.image} imgAlt={articleAlt} />
+
           <div className="articleInfo">
-
             <AudioAvailable booleanValue={yourArticles.hasAudioAvailable}/>
-
             <h2>{yourArticles.title}</h2>
             <p>{yourArticles.description}</p>
+
             <div className="bottomOfDiv">
               <AuthorPicture className="authorPic" imgSrc={yourArticles.author.image} imgAlt={authorAlt} />
               <h4>{yourArticles.author.name}</h4>
-
               <DateConversion date={yourArticles.postedDate}/> • {yourArticles.minutesToRead} min read
               <BookmarkIcon imgSrc={bookmarkImage} imgAlt={bookmarkAlt} />
             </div>
+
           </div>
         </div>
-      ))
-      }
+      ))}
     </section>
   )
 }
