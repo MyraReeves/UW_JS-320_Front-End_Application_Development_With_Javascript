@@ -40,3 +40,24 @@
 .read-the-docs {
   color: #888;
 }
+
+.italics {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+h2 {
+  margin-bottom: 3px;
+}
+
+.rental-type {
+  color: rgb(144, 144, 144);
+}
+
+.superhost {
+  color: darkblue;
+  background-color: rgb(186, 234, 246);
+}
