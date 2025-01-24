@@ -13,7 +13,7 @@ function RentalsApp() {
       {bnbProperties.map( (bnbProperties, index) => (
         <div className="each-rental-property" key={index} style={{display: 'inline-block'}}>
 
-          <h2>{bnbProperties.title}</h2>
+          <h2><span className="italics">&#39;&#39; {bnbProperties.title} &#39;&#39;</span></h2>
 
           <ProductImage imgSrc={bnbProperties.image} />
 
@@ -21,8 +21,10 @@ function RentalsApp() {
 
           <p className="rental-type">{bnbProperties.houseType}</p>
 
-          <p><span>Host:</span> {bnbProperties.host.name}</p>
-          <IfSuperhost booleanValue={bnbProperties.host.isSuperhost}/>
+          <p>
+            <span className="bold">Host:</span> {bnbProperties.host.name}
+            <IfSuperhost booleanValue={bnbProperties.host.isSuperhost}/>
+          </p>
         </div>
       ))}
 
