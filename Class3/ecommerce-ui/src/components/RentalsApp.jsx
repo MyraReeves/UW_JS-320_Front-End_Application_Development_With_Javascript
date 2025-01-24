@@ -21,8 +21,13 @@ function RentalsApp() {
 
           <p className="rental-type">{bnbProperties.houseType}</p>
 
+          <p className="guest-rating">
+            -stars-
+            based on <span className="reviews">{bnbProperties.rating.reviews}</span> reviews
+          </p>
+
           <p className="host-info">
-            <span className="bold">Host:</span> {bnbProperties.host.name}
+            <span className="bold">Host:</span> &nbsp; {bnbProperties.host.name}
             <IfSuperhost booleanValue={bnbProperties.host.isSuperhost}/>
           </p>
         </div>
