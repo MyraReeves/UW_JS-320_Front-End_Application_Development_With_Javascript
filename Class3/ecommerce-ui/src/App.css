@@ -49,7 +49,7 @@
 }
 
 h2 {
-  margin-bottom: 3px;
+  margin-bottom: 15px;
   font-family: Georgia;
 }
 
@@ -75,6 +75,11 @@ h2 {
 .productImage {
   width: 80%;
   border-radius: 20%;
+  box-shadow: 1px 1px 2px black, 0 0 20px rgb(0, 0, 89), 0 0 2px darkblue;
+}
+
+.productImage:hover {
+  box-shadow: 1px 1px 20px white, 0 0 30px rgb(179, 179, 243), 0 0 20px rgb(204, 208, 253);
 }
 
 .rental-location {
@@ -98,7 +103,7 @@ h2 {
 }
 
 .host-info {
-  margin: 0 0 10px 20px;
+  margin: 10px 0 10px 20px;
   text-align: left;
 }
 
