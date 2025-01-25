@@ -13,7 +13,7 @@
             "description": "Free cancellation"
         },
         "host": {
-            "name": "Robert",
+            "name": "Robert Reeves",
             "isSuperhost": true
         },
         "rating": {
@@ -35,11 +35,11 @@
             "description": ""
         },
         "host": {
-            "name": "Jamie",
+            "name": "Jamie Jackson",
             "isSuperhost": true
         },
         "rating": {
-            "stars": 4.5,
+            "stars": 4,
             "reviews": 381
         }
     },
@@ -57,7 +57,7 @@
             "description": "Free cancellation"
         },
         "host": {
-            "name": "Olivia",
+            "name": "Olivia Ohlson",
             "isSuperhost": false
         },
         "rating": {
