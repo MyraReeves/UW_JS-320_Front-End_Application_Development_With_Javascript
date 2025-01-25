@@ -4,6 +4,7 @@ import bnbProperties from "./bnbs.json";
 
 import ProductImage from "./ProductImage";
 import RentalLocation from "./RentalLocation";
+import RatingStars from "./RatingStars";
 import IfSuperhost from "./IfSuperhost";
 
 function RentalsApp() {
@@ -22,8 +23,7 @@ function RentalsApp() {
           <p className="rental-type">{bnbProperties.houseType}</p>
 
           <p className="guest-rating">
-            -stars-
-            based on <span className="reviews">{bnbProperties.rating.reviews}</span> reviews
+            <RatingStars numberOfStars = {bnbProperties.rating.stars}/> based on <span className="reviews">{bnbProperties.rating.reviews}</span> reviews
           </p>
 
           <p className="host-info">
@@ -45,6 +45,10 @@ RentalLocation.propTypes = {
   city: PropTypes.string.isRequired,
   state: PropTypes.string.isRequired,
   country: PropTypes.string.isRequired
+}
+
+RatingStars.propTypes = {
+  numberOfStars: PropTypes.number.isRequired,
 }
 
 IfSuperhost.propTypes = {
