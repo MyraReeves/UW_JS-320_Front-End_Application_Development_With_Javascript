@@ -1,7 +1,6 @@
-#root {
+/* #root {
   max-width: 1280px;
-  /* margin: 0 auto;
-  padding: 2rem; */
+  margin: 0;
 }
 
 .logo {
@@ -38,7 +37,7 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
 
 .italics {
   font-style: italic;
@@ -59,7 +58,7 @@ h2 {
 }
 
 .each-rental-property {
-  width: 30%;
+  width: 27%;
   text-align: center;
   background-color: rgb(229, 229, 229);
   border: solid gray 1px;
@@ -111,4 +110,22 @@ h2 {
   color: darkblue;
   background-color: rgb(186, 234, 246);
   margin-left: 15px;
+}
+
+.shopping-cart {
+  background-color: blanchedalmond;
+  float: right;
+  width: 10%;
+  height: 100%;
+  /* margin: 0; */
+  padding: 0 35px 5px 35px;
+  text-align: center;
+  font-size: 12pt;
+  border: double 1px black;
+  position: fixed;
+  right: 0;
+}
+
+.shopping-cart h3 {
+  text-decoration: underline;
 }
