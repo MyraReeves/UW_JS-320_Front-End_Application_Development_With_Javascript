@@ -49,7 +49,7 @@
 
 h2 {
   margin-bottom: 15px;
-  font-family: Georgia;
+  font-family: Georgia, serif;
 }
 
 .available-rentals {
@@ -114,18 +114,29 @@ h2 {
 
 .shopping-cart {
   background-color: blanchedalmond;
+  font-family: Garamond;
   float: right;
   width: 10%;
   height: 100%;
-  /* margin: 0; */
-  padding: 0 35px 5px 35px;
+  padding: 0 35px;
   text-align: center;
   font-size: 12pt;
   border: double 1px black;
   position: fixed;
   right: 0;
+  top: 20px;
 }
 
 .shopping-cart h3 {
+  font-family: Georgia, serif;
   text-decoration: underline;
+  font-size: larger;
+}
+
+.align-left {
+  float: left;
+}
+
+.align-right {
+  float: right;
 }
