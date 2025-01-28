@@ -112,6 +112,12 @@ h2 {
   margin-left: 15px;
 }
 
+.button-addToCart {
+  padding: 1px 5px;
+  border: solid 1px black;
+  margin: 5px 0 5px 15px;
+}
+
 .shopping-cart {
   background-color: blanchedalmond;
   font-family: Garamond;
