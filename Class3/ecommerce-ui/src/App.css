@@ -112,10 +112,32 @@ h2 {
   font-size: larger;
 }
 
+.shopping-cart hr {
+  width: 70%;
+  margin: 0 auto;
+}
+
+ul {
+  margin-left: 3px;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  font-size: 14px;
+  text-align: left;
+}
+
 .align-left {
   float: left;
+  margin: 10px 0;
 }
 
 .align-right {
   float: right;
+}
+
+.total-due {
+  font-weight: bold;
+  text-align: left;
 }
