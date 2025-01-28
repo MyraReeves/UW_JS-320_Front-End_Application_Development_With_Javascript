@@ -7,23 +7,21 @@ import RentalLocation from "./RentalLocation";
 import RatingStars from "./RatingStars";
 import IfSuperhost from "./IfSuperhost";
 
-// function myFunction() {
-//   console.log('Clicked!');
-// }
-
 
 function RentalsApp(props) {
 
   const {rentalToBePurchased, setRentalToBePurchased, allRentals, setAllRentals} = props
 
-  const addToCart = (event) => {
+  const addToCart = (nameOfProperty) => {
+    // let costOfRental = bnbProperties.payment.cost
     setAllRentals([...allRentals, rentalToBePurchased])
+    setRentalToBePurchased(nameOfProperty)
   }
 
   return (
     <section className="available-rentals">
       <h1>Top recommendations:</h1>
-      <h5>Click on a property to learn more about it <span style={{color: "lightgray"}}> &nbsp; *Currently disabled*</span></h5>
+      <h5>Click on a property to learn more about it <span style={{color: "lightgray"}}> &nbsp; ✱Currently disabled✱</span></h5>
 
       {bnbProperties.map( (bnbProperties, index) => (
         <div className="each-rental-property" key={index} style={{display: 'inline-block'}}>
@@ -45,7 +43,10 @@ function RentalsApp(props) {
             <IfSuperhost booleanValue={bnbProperties.host.isSuperhost}/>
           </p>
 
-          <span><strong>${bnbProperties.payment.cost}</strong> per night <button type="submit" className="button-addToCart" onClick={addToCart}>Add to Cart</button></span>
+          <span>
+            <strong>${bnbProperties.payment.cost}</strong> per night
+            <button type="submit" className="button-addToCart" onClick={() => addToCart(bnbProperties.title)} >Add to Cart</button>
+          </span>
         </div>
       ))}
 
