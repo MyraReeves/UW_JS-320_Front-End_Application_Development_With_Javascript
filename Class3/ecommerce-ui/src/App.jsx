@@ -1,13 +1,26 @@
+import {useState} from "react"
+
 import RentalsApp from './components/RentalsApp'
 import ShoppingCart from './components/ShoppingCart'
 
 import './App.css'
 
 function App() {
+  const [rentalToBePurchased, setRentalToBePurchased] = useState('')
+  const [allRentals, setAllRentals] = useState([])
+
   return (
     <>
-      <ShoppingCart/>
-      <RentalsApp />
+      <ShoppingCart
+        allRentals = {allRentals}
+        setAllRentals = {setAllRentals}
+      />
+      <RentalsApp
+        rentalToBePurchased = {rentalToBePurchased}
+        setRentalToBePurchased = {setRentalToBePurchased}
+        allRentals = {allRentals}
+        setAllRentals = {setAllRentals}
+      />
     </>
   )
 }
