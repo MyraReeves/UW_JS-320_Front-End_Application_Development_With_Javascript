@@ -139,5 +139,25 @@ li {
 
 .total-due {
   font-weight: bold;
-  text-align: left;
+  position: fixed;
+  bottom: 3%;
+}
+
+.total-due h2 {
+  margin: 0;
+  background-color: rgb(245, 245, 245);
+}
+
+.total-due button {
+  padding: 5px 15px;
+  border: solid 2px black;
+  margin: 10px auto;
+  color: rgb(0, 80, 0);
+  font-weight: bold;
+  background-color: rgb(187, 232, 187);
+}
+
+.total-due button:hover {
+  background-color: rgb(0, 80, 0);
+  color: rgb(187, 232, 187);
 }
