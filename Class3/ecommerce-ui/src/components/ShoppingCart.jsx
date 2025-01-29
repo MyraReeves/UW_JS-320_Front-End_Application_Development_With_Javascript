@@ -1,9 +1,9 @@
-// import {useState} from "react"
 import PropTypes from "prop-types";
 
 function ShoppingCart(props) {
   const {allRentals, costOfRental} = props
-  // const [allRentals, setAllRentals] = useState([])
+
+  // const costOfRental = bnbProperties.payment.cost
 
   return (
     <>
@@ -18,7 +18,10 @@ function ShoppingCart(props) {
                     </li>
           })}
         </ul>
-        <span className ="total-due">Total Payment Due:</span>
+        <div className ="total-due">Total Payment Due:
+          <h2>$</h2>
+          <button>Proceed to Checkout</button>
+        </div>
       </section>
 
     </>
