@@ -13,6 +13,7 @@ function App() {
     <>
       <ShoppingCart
         allRentals = {allRentals}
+        // rentalToBePurchased = {rentalToBePurchased}
         setAllRentals = {setAllRentals}
       />
       <RentalsApp
