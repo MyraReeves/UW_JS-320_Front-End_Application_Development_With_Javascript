@@ -15,7 +15,7 @@ function App() {
     <>
       <ShoppingCart
         allRentals = {allRentals}
-        setAllRentals = {setAllRentals}
+        allPrices = {allPrices}
       />
       <RentalsApp
         rentalToBePurchased = {rentalToBePurchased}
