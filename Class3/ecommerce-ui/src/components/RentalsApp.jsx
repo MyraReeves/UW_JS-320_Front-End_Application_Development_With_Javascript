@@ -10,10 +10,11 @@ import IfSuperhost from "./IfSuperhost";
 
 function RentalsApp(props) {
 
-  const {allRentals, setAllRentals} = props
+  const {allRentals, allPrices, setAllRentals, setAllPrices} = props
 
-  const addToCart = (nameOfProperty) => {
+  const addToCart = (nameOfProperty, price) => {
     setAllRentals([...allRentals, nameOfProperty])
+    setAllPrices([...allPrices, price])
   }
 
   return (
@@ -43,7 +44,7 @@ function RentalsApp(props) {
 
           <span>
             <strong>${bnbProperties.payment.cost}</strong> per night
-            <button type="submit" className="button-addToCart" onClick={() => addToCart(bnbProperties.title)}>Add to Cart</button>
+            <button type="submit" className="button-addToCart" onClick={() => addToCart(bnbProperties.title, bnbProperties.payment.cost)} >Add to Cart</button>
           </span>
         </div>
       ))}
@@ -54,7 +55,9 @@ function RentalsApp(props) {
 
 RentalsApp.propTypes = {
   allRentals: PropTypes.arrayOf(PropTypes.string),
+  allPrices: PropTypes.arrayOf(PropTypes.number),
   setAllRentals: PropTypes.func,
+  setAllPrices: PropTypes.func
 }
 
 ProductImage.propTypes = {
