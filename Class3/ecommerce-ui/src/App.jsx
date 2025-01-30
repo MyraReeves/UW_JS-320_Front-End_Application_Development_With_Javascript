@@ -7,20 +7,25 @@ import './App.css'
 
 function App() {
   const [rentalToBePurchased, setRentalToBePurchased] = useState('')
+  const [priceOfItem, setPriceOfItem] = useState()
   const [allRentals, setAllRentals] = useState([])
+  const [allPrices, setAllPrices] = useState([])
 
   return (
     <>
       <ShoppingCart
         allRentals = {allRentals}
-        // rentalToBePurchased = {rentalToBePurchased}
         setAllRentals = {setAllRentals}
       />
       <RentalsApp
         rentalToBePurchased = {rentalToBePurchased}
-        setRentalToBePurchased = {setRentalToBePurchased}
         allRentals = {allRentals}
+        priceOfItem = {priceOfItem}
+        allPrices = {allPrices}
+        setRentalToBePurchased = {setRentalToBePurchased}
         setAllRentals = {setAllRentals}
+        setPriceOfItem = {setPriceOfItem}
+        setAllPrices = {setAllPrices}
       />
     </>
   )
