@@ -97,7 +97,8 @@ h2 {
   float: right;
   width: 10%;
   height: 100%;
-  padding: 0 35px;
+  padding: 0 35px 0 12px;
+  margin-right: 5px;
   text-align: center;
   font-size: 12pt;
   border: double 1px black;
