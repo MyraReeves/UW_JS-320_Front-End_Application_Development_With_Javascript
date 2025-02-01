@@ -11,10 +11,19 @@ function App() {
   const [allRentals, setAllRentals] = useState([])
   const [allPrices, setAllPrices] = useState([])
 
+  const eachRental = () => {
+    allRentals.map((rentalToBePurchased, index) => {
+      return <span key={index} className="align-left">{rentalToBePurchased}</span>
+    })
+  };
+
   return (
     <>
       <ShoppingCart
         allRentals = {allRentals}
+        setAllRentals = {setAllRentals}
+        eachRental = {eachRental}
+        setAllPrices = {setAllPrices}
         allPrices = {allPrices}
       />
       <RentalsApp
