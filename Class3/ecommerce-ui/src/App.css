@@ -111,6 +111,18 @@ h2 {
   font-family: Georgia, serif;
   text-decoration: underline;
   font-size: larger;
+  margin-bottom: 10px;
+}
+
+/* .shopping-cart-column1 {
+  width: 45%;
+} */
+
+.clear-cart {
+  padding: 1px 5px;
+  border: solid 1px darkred;
+  color: darkred;
+  margin: 0 0;
 }
 
 .shopping-cart hr {
