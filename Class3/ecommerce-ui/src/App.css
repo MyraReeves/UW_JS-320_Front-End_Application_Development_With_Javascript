@@ -118,7 +118,7 @@ h2 {
   width: 45%;
 } */
 
-.clear-cart {
+.clear-cart, .delete-button {
   padding: 1px 5px;
   border: solid 1px darkred;
   color: darkred;
@@ -148,6 +148,16 @@ li {
 
 .align-right {
   float: right;
+}
+
+.delete-button {
+  float: right;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+  color: rgb(255, 225, 225);
+  border: solid 1px rgb(255, 225, 225);
 }
 
 .total-due {
