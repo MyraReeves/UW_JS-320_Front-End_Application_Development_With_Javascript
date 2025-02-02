@@ -8,6 +8,15 @@ function ShoppingCart(props) {
     setAllPrices([])
   }
 
+  const deleteIndividually = (indexOfItem) => {
+    const beginningOfExistingArray = allRentals.slice(0, indexOfItem)
+    const endOfExistingArray = allRentals.slice(indexOfItem + 1)
+    const newShoppingCartArray = [...beginningOfExistingArray, ...endOfExistingArray]
+    setAllRentals(newShoppingCartArray)
+
+    allPrices.splice(indexOfItem, 1)
+  }
+
   // const priceOfEach = () => {
   //   allPrices.map( (costOfRental, index) => {
   //     return <>
@@ -36,13 +45,13 @@ function ShoppingCart(props) {
       <section className="shopping-cart">
         <h3>Shopping Cart</h3>
 
-        <button className="clear-cart" onClick={clearAll}>Clear all</button>
+        <button className="clear-cart" onClick={() => clearAll()}>Clear all</button>
 
         <ul>
           <li>
             {allRentals.map((rentalToBePurchased, index) => {
               return <>
-                <span key = {index} className="align-left">{rentalToBePurchased}</span>
+                <span key = {index} className="align-left">{rentalToBePurchased} <br/><button className="delete-button" onClick={() => deleteIndividually(index)}>Delete</button></span>
                 <hr/>
               </> }
             )}
