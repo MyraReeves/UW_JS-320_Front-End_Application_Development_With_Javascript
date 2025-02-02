@@ -17,15 +17,6 @@ function ShoppingCart(props) {
     allPrices.splice(indexOfItem, 1)
   }
 
-  // const priceOfEach = () => {
-  //   allPrices.map( (costOfRental, index) => {
-  //     return <>
-  //     <span key={index} className="align-right">{costOfRental}</span>
-  //     <hr/>
-  //     </>
-  //   })
-  // }
-
   const calculateTotal = ({allPrices}) => {
     let sum = 0;
     const newSum = allPrices.reduce((total, current) => {
@@ -33,12 +24,7 @@ function ShoppingCart(props) {
       }, 0);
     return sum + newSum
   }
-  //   let sum = 0;
-  //   for (let i = 0; i < allPrices.length; i++) {
-  //       sum += allPrices[i];
-  //   }
-  //   return sum
-  // }
+
 
   return (
     <>
@@ -55,12 +41,13 @@ function ShoppingCart(props) {
                 <hr/>
               </> }
             )}
-            <span>Ongoing Tally:</span><br/>
+            {/* Re-insert the following commented-out code to confirm that prices are functioning properly during additions/deletions: */}
+             {/* <span>Ongoing Tally:</span><br/>
             {allPrices.map((costOfRental, index) => {
               return <>
                 <span key = {index} className="align-right">${costOfRental}, &nbsp;</span>
               </> }
-          )}
+          )} */}
           </li>
         </ul>
         <div className ="total-due">Total Payment Due:
