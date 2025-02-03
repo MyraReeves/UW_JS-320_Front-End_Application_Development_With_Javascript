@@ -15,7 +15,14 @@ function ShoppingCart(props) {
     setAllRentals(newShoppingCartArray)
 
     allPrices.splice(indexOfItem, 1)
-  }
+  };
+
+
+  const filterOut = (indexOfRentalDeleted) => {
+    const newArray = allRentals.filter(index => index !== indexOfRentalDeleted);
+    setAllRentals(newArray)
+  };
+
 
   const calculateTotal = ({allPrices}) => {
     let sum = 0;
@@ -23,7 +30,7 @@ function ShoppingCart(props) {
       return total + current;
       }, 0);
     return sum + newSum
-  }
+  };
 
 
   return (
@@ -34,12 +41,9 @@ function ShoppingCart(props) {
         <button className="clear-cart" onClick={() => clearAll()}>Clear all</button>
 
         <ul>
-          <li>
             {allRentals.map((rentalToBePurchased, index) => {
-              return <>
-                <span key = {index} className="align-left">{rentalToBePurchased} <br/><button className="delete-button" onClick={() => deleteIndividually(index)}>Delete</button></span>
-                <hr/>
-              </> }
+              return <li key={index} className="align-left">{rentalToBePurchased} <br/><button className="delete-button" onClick={() => deleteIndividually(index)}>Delete</button></li>
+                 }
             )}
             {/* Re-insert the following commented-out code to confirm that prices are functioning properly during additions/deletions: */}
              {/* <span>Ongoing Tally:</span><br/>
@@ -48,7 +52,6 @@ function ShoppingCart(props) {
                 <span key = {index} className="align-right">${costOfRental}, &nbsp;</span>
               </> }
           )} */}
-          </li>
         </ul>
         <div className ="total-due">Total Payment Due:
           <h2>$ {calculateTotal({allPrices})}</h2>
