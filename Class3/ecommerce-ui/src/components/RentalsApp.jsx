@@ -24,14 +24,29 @@ function RentalsApp(props) {
 
   //  Replacing the above solution with an array of objects instead:
    const addToArrayOfShoppingCartObjects = (index, nameOfProperty, price) => {
-    const newShoppingCartObject = [...arrayOfShoppingCartObjects, {
-      index: index,
-      propertyName: nameOfProperty,
-      price: price,
-    }]
 
-    setArrayOfShoppingCartObjects(newShoppingCartObject)
-    setAllPrices([...allPrices, price])
+    const checkFor = {
+      propertyName: nameOfProperty,
+    };
+
+    const alreadyInCart = ( (rental) => rental.propertyName === checkFor.propertyName )
+
+    if (
+      arrayOfShoppingCartObjects.some(alreadyInCart)
+    ){
+      window.alert('⛔ ERROR: Duplicate request ⛔ \nThat rental property is already in your cart!');
+    }
+
+    else {
+      const newShoppingCartObject = [...arrayOfShoppingCartObjects, {
+        index: index,
+        propertyName: nameOfProperty,
+        price: price,
+      }]
+
+      setArrayOfShoppingCartObjects(newShoppingCartObject)
+      setAllPrices([...allPrices, price])
+    }
   }
 
 
