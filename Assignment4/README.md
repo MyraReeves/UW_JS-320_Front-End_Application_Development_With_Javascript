@@ -66,3 +66,7 @@ Note that these are the only requirements. The APIs may have pagination for gett
 * Add a search box feature to the character home page to filter the character list
 * Add the ability to "favorite" a character and store favorite characters using the browser's `localStorage` API
 * Write tests for each page (note that you may need to learn/use Jest `mock`/`spyOn` APIs to mock the `fetch` call).
+
+## Grading
+
+![Screenshot of grading criteria from assignment on Canvas](ScreenshotAssignment4-Grading.jpg)
