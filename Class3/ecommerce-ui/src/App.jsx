@@ -20,7 +20,6 @@ function App() {
   return (
     <>
       <ShoppingCart
-        allRentals = {allRentals}
         setAllRentals = {setAllRentals}
         eachRental = {eachRental}
         setAllPrices = {setAllPrices}

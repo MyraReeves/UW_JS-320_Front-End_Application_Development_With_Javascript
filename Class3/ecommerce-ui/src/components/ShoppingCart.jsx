@@ -9,7 +9,7 @@ function ShoppingCart(props) {
     setArrayOfShoppingCartObjects([])
   }
 
-  /* Copy of the previous, worse method
+  /*  This was my initial method of deleting individual items from the shopping cart. Code kept for reference. To use this, the relevant props would need to be re-added above as well as re-added to the list being passed down inside of App.jsx:
 
   const deleteIndividually = (indexOfItem) => {
     const beginningOfExistingArray = allRentals.slice(0, indexOfItem)
@@ -22,8 +22,7 @@ function ShoppingCart(props) {
 
   */
 
-
-  //  The following (using the array of objects instead) is the better alternative to the above even though it deletes from the array all indexes associated with .propertyName because arrayOfShoppingCartObjects.index is the same for all instances in the array
+  //  The following (using the array of objects instead) is a better alternative than the above commented-out method:
   const filterOut = (indexToBeDeleted, priceToBeDeleted) => {
     const newArray = arrayOfShoppingCartObjects.filter( (rentalObject) => {return rentalObject.index !== indexToBeDeleted} );
     setArrayOfShoppingCartObjects(newArray)
@@ -31,7 +30,6 @@ function ShoppingCart(props) {
     const subtractFromTotal = allPrices.filter( (rentalObject) => {return rentalObject !== priceToBeDeleted})
     setAllPrices(subtractFromTotal)
   };
-
 
 
   const calculateTotal = ({allPrices}) => {
@@ -67,7 +65,6 @@ function ShoppingCart(props) {
 }
 
 ShoppingCart.propTypes = {
-  allRentals: PropTypes.arrayOf(PropTypes.string).isRequired,
   setAllRentals: PropTypes.func.isRequired,
   eachRental: PropTypes.func.isRequired,
   allPrices: PropTypes.arrayOf(PropTypes.number).isRequired,
