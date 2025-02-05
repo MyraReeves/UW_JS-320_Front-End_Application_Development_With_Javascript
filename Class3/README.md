@@ -1,4 +1,4 @@
-# Week 3 Homework Assignment
+# Weeks 3 & 4 (homework assignment #3)
 
 ## Getting Started
 
