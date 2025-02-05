@@ -10,12 +10,28 @@ import IfSuperhost from "./IfSuperhost";
 
 function RentalsApp(props) {
 
-  const {allRentals, allPrices, setAllRentals, setAllPrices} = props
+  const {allPrices, arrayOfShoppingCartObjects, setAllPrices, setArrayOfShoppingCartObjects} = props
 
-  const addToCart = (nameOfProperty, price) => {
-    setAllRentals([...allRentals, nameOfProperty])
+  /* Previously used solution. Code kept for reference:
+    const addToCart = (nameOfProperty, price) => {
+      setAllRentals([...allRentals, nameOfProperty])
+      setAllPrices([...allPrices, price])
+    }
+  */
+
+
+  //  Replacing the above solution with an array of objects instead:
+   const addToArrayOfShoppingCartObjects = (index, nameOfProperty, price) => {
+    const newShoppingCartObject = [...arrayOfShoppingCartObjects, {
+      index: index,
+      propertyName: nameOfProperty,
+      price: price,
+    }]
+
+    setArrayOfShoppingCartObjects(newShoppingCartObject)
     setAllPrices([...allPrices, price])
   }
+
 
   return (
     <section className="available-rentals">
@@ -44,7 +60,7 @@ function RentalsApp(props) {
 
           <span>
             <strong>${bnbProperties.payment.cost}</strong> per night
-            <button type="submit" className="button-addToCart" onClick={() => addToCart(bnbProperties.title, bnbProperties.payment.cost)} >Add to Cart</button>
+            <button type="submit" className="button-addToCart" onClick={() => addToArrayOfShoppingCartObjects(index, bnbProperties.title, bnbProperties.payment.cost)} >Add to Cart</button>
           </span>
         </div>
       ))}
@@ -54,10 +70,10 @@ function RentalsApp(props) {
 }
 
 RentalsApp.propTypes = {
-  allRentals: PropTypes.arrayOf(PropTypes.string),
-  allPrices: PropTypes.arrayOf(PropTypes.number),
-  setAllRentals: PropTypes.func,
-  setAllPrices: PropTypes.func
+  allPrices: PropTypes.arrayOf(PropTypes.number).isRequired,
+  setAllPrices: PropTypes.func.isRequired,
+  arrayOfShoppingCartObjects: PropTypes.arrayOf(PropTypes.object).isRequired,
+  setArrayOfShoppingCartObjects: PropTypes.func.isRequired
 }
 
 ProductImage.propTypes = {
