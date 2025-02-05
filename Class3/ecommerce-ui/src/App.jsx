@@ -6,10 +6,10 @@ import ShoppingCart from './components/ShoppingCart'
 import './App.css'
 
 function App() {
-  const [rentalToBePurchased, setRentalToBePurchased] = useState('')
-  const [priceOfItem, setPriceOfItem] = useState()
-  const [allRentals, setAllRentals] = useState([])
-  const [allPrices, setAllPrices] = useState([])
+  const [allRentals, setAllRentals] = useState([]);
+  const [allPrices, setAllPrices] = useState([]);
+
+  const [arrayOfShoppingCartObjects, setArrayOfShoppingCartObjects] = useState([]);
 
   const eachRental = () => {
     allRentals.map((rentalToBePurchased, index) => {
@@ -25,16 +25,14 @@ function App() {
         eachRental = {eachRental}
         setAllPrices = {setAllPrices}
         allPrices = {allPrices}
+        arrayOfShoppingCartObjects = {arrayOfShoppingCartObjects}
+        setArrayOfShoppingCartObjects = {setArrayOfShoppingCartObjects}
       />
       <RentalsApp
-        rentalToBePurchased = {rentalToBePurchased}
-        allRentals = {allRentals}
-        priceOfItem = {priceOfItem}
         allPrices = {allPrices}
-        setRentalToBePurchased = {setRentalToBePurchased}
-        setAllRentals = {setAllRentals}
-        setPriceOfItem = {setPriceOfItem}
         setAllPrices = {setAllPrices}
+        arrayOfShoppingCartObjects = {arrayOfShoppingCartObjects}
+        setArrayOfShoppingCartObjects = {setArrayOfShoppingCartObjects}
       />
     </>
   )

@@ -12,11 +12,13 @@ function RentalsApp(props) {
 
   const {allPrices, arrayOfShoppingCartObjects, setAllPrices, setArrayOfShoppingCartObjects} = props
 
-  /* Previously used solution. Code kept for reference:
+  /* This is my previous solution. Code kept for reference. To use this, the relevant props (which have now been deleted) would need to be re-added above as well as re-added to the list being passed down inside of App.jsx:
+
     const addToCart = (nameOfProperty, price) => {
       setAllRentals([...allRentals, nameOfProperty])
       setAllPrices([...allPrices, price])
     }
+
   */
 
 
