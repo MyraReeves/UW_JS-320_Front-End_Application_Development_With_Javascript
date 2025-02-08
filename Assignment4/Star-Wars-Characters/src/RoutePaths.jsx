@@ -1,10 +1,12 @@
 import { Routes, Route, Link } from 'react-router-dom'
 
+import Homepage from './Homepage'
+
 
 function RoutePaths() {
 
   const Home = () => {
-    return <h1>Home Page!!</h1>
+    return <Homepage/>
   }
 
   const Chewbacca = () => {
