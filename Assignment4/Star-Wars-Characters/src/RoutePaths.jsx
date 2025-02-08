@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom'
 
 
 function RoutePaths() {
@@ -8,23 +8,38 @@ function RoutePaths() {
   }
 
   const Chewbacca = () => {
-    return <h1>Chewbacca</h1>
+    return <>
+      <h1>Chewbacca</h1>
+      <Link to='/'>	🏠︎ Return to Character Index</Link>
+    </>
   }
 
   const Luke = () => {
-    return <h1>Luke</h1>
+    return <>
+      <h1>Luke</h1>
+      <Link to='/'>	🏠︎ Return to Character Index</Link>
+    </>
   }
 
   const R2D2 = () => {
-    return <h1>R2-D2</h1>
+    return <>
+      <h1>R2-D2</h1>
+      <Link to='/'>	🏠︎ Return to Character Index</Link>
+    </>
   }
 
   const Rey = () => {
-    return <h1>Rey</h1>
+    return <>
+      <h1>Rey</h1>
+      <Link to='/'>	🏠︎ Return to Character Index</Link>
+    </>
   }
 
   const Yoda = () => {
-    return <h1>Yoda</h1>
+    return <>
+      <h1>Yoda</h1>
+      <Link to='/'>🏠︎ Return to Character Index 🏠︎</Link>
+    </>
   }
 
 
