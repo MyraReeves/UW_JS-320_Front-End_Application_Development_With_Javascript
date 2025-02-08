@@ -20,3 +20,12 @@ header img.title {
 body {
   background-color: black;
 }
+
+.linkToEachCharacter {
+  text-align: center;
+}
+
+.linkToEachCharacter h2 {
+  color: black;
+  text-shadow: -1px 0 gold, 0 1px goldenrod, 1px 0 gold, 0 -1px goldenrod;
+}
