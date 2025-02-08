@@ -1,0 +1,22 @@
+[
+  {
+      "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/chewbacca.png?raw=true",
+      "name": "Chewbacca"
+  },
+  {
+    "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/luke.png?raw=true",
+    "name": "Luke Skywalker"
+  },
+  {
+    "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/r2d2.png?raw=true",
+    "name": "R2-D2"
+  },
+  {
+    "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/rey.png?raw=true",
+    "name": "Rey Skywalker"
+  },
+  {
+    "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/yoda.png?raw=true",
+    "name": "Yoda"
+  }
+]
