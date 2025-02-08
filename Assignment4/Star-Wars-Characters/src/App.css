@@ -21,8 +21,21 @@ body {
   background-color: black;
 }
 
+.character-index {
+  margin-top: 30px;
+}
+
 .linkToEachCharacter {
   text-align: center;
+  margin: 20px;
+  border: rgb(55, 203, 240) solid 1px;
+  box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 lightblue;
+  padding: 20px;
+  width: 200px;
+}
+
+.linkToEachCharacter img {
+  height: 200px;
 }
 
 .linkToEachCharacter h2 {
