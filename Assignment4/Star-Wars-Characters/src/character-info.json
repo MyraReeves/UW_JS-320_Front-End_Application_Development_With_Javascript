@@ -1,22 +1,27 @@
 [
   {
       "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/chewbacca.png?raw=true",
-      "name": "Chewbacca"
+      "name": "Chewbacca",
+    "page": "chewbacca"
   },
   {
     "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/luke.png?raw=true",
-    "name": "Luke Skywalker"
+    "name": "Luke Skywalker",
+    "page": "luke-skywalker"
   },
   {
     "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/r2d2.png?raw=true",
-    "name": "R2-D2"
+    "name": "R2-D2",
+    "page": "r2-d2"
   },
   {
     "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/rey.png?raw=true",
-    "name": "Rey Skywalker"
+    "name": "Rey Skywalker",
+    "page": "rey"
   },
   {
     "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/yoda.png?raw=true",
-    "name": "Yoda"
+    "name": "Yoda",
+    "page": "yoda"
   }
 ]
