@@ -42,3 +42,32 @@ body {
   color: black;
   text-shadow: -1px 0 gold, 0 1px goldenrod, 1px 0 gold, 0 -1px goldenrod;
 }
+
+.linkToEachCharacter:hover {
+  background-color: rgb(23, 23, 23);
+  cursor: pointer;
+}
+
+.character-info {
+  width: 60%;
+  text-align: center;
+  border: double 1px gold;
+  border-radius: 12px;
+  margin: 200px auto;
+  padding: 10px;
+}
+
+.character-info img {
+  height: 300px;
+}
+
+p {
+  color: gold;
+  font-size: 16pt;
+  font-family: "Papyrus";
+}
+
+.character-name {
+  font-weight: bold;
+  font-size: larger;
+}
