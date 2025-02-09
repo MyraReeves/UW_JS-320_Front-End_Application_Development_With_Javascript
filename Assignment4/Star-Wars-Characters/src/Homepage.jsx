@@ -11,7 +11,7 @@ function Homepage() {
 
         <div className="linkToEachCharacter" key={index} style={{display: 'inline-block'}} onClick={() => navigate(characters.page)}>
 
-          <img className="previewPic" src={characters.image} alt={`Small photo of ${characters.name}`} />
+          <img className="previewPic" src={characters.image} alt={`Small image of ${characters.name}`} />
           <h2>{characters.name}</h2>
 
         </div>
