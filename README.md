@@ -4,10 +4,10 @@ Below are my school assignments from the 2025 Winter quarter of the University o
 
 <br>
 
-* [Assignment 4 - APIs in React & using Routes](./Assignment4/README.md)
+* [Assignment 4 - Star Wars Character Database](./Assignment4/README.md) -- Using an API in React & using Routes
 
-* [Assignment 3 - Mock E-commerce user interface](./Class3/README.md)
+* [Assignment 3 - Vacation Rental page](./Class3/README.md) -- Practice creating a mock E-commerce user interface
 
-* [Assignment 2 - Intro to React](./Class2/README.md)
+* [Assignment 2 - Weblog Articles homepage](./Class2/README.md) -- Introduction to React
 
 * [Assignment 1 - Npm, Node.js, linters, & ECMAScript syntax](./Class1/README.md)
