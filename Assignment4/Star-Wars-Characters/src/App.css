@@ -59,8 +59,9 @@ body {
 .character-info {
   width: 60%;
   text-align: center;
-  border: dotted 2px gold;
-  box-shadow: 0 4px 8px 0 lightyellow, 0 6px 20px 0 lightyellow;
+  background-color: rgb(28, 46, 46);
+  border: dotted 3px rgb(77, 120, 130);
+  box-shadow: 0 4px 8px 0 rgb(121, 172, 184), 0 6px 20px 0 rgb(121, 172, 184);
   border-radius: 12px;
   margin: 200px auto;
   padding: 10px;
