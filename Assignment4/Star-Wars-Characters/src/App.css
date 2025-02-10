@@ -22,7 +22,15 @@ body {
 }
 
 .character-index {
-  margin-top: 30px;
+  margin-top: 200px;
+  text-align: center;
+}
+
+.character-index p {
+  text-decoration: underline;
+  text-align: left;
+  margin-bottom: 0;
+  margin-left: 50px;
 }
 
 .linkToEachCharacter {
@@ -51,7 +59,8 @@ body {
 .character-info {
   width: 60%;
   text-align: center;
-  border: double 1px gold;
+  border: dotted 2px gold;
+  box-shadow: 0 4px 8px 0 lightyellow, 0 6px 20px 0 lightyellow;
   border-radius: 12px;
   margin: 200px auto;
   padding: 10px;
