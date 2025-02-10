@@ -1,13 +1,38 @@
 [
   {
+    "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/c3po.png?raw=true",
+    "name": "C-3PO",
+    "page": "c-3po"
+  },
+  {
     "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/chewbacca.png?raw=true",
     "name": "Chewbacca",
     "page": "chewbacca"
   },
   {
+    "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/han.png?raw=true",
+    "name": "Han Solo",
+    "page": "han-solo"
+  },
+  {
+    "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/leia.png?raw=true",
+    "name": "Leia Organa",
+    "page": "leia-organa"
+  },
+  {
     "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/luke.png?raw=true",
     "name": "Luke Skywalker",
     "page": "luke-skywalker"
+  },
+  {
+    "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/mace.png?raw=true",
+    "name": "Mace Windu",
+    "page": "mace"
+  },
+  {
+    "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/obi-wan.png?raw=true",
+    "name": "Obi-Wan Kenobi",
+    "page": "obiwan-kenobi"
   },
   {
     "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/r2d2.png?raw=true",
