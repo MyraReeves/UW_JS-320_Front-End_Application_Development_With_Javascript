@@ -24,7 +24,7 @@ function StarWarsApi({characterNumber}){
     character.gender = ""
   }
 
-  if (character.species == "https://swapi.py4e.com/api/species/1/"){
+  if (character.species == "https://swapi.py4e.com/api/species/1/" || character.species == []){
     character.species = "human"
   }
 
@@ -40,7 +40,7 @@ function StarWarsApi({characterNumber}){
     character.species = "of unknown species"
   }
 
-  if (character.hair_color == "n/a"){
+  if (character.hair_color == "n/a" || character.hair_color == "none"){
     character.hair_color = "no"
   }
 
@@ -58,6 +58,10 @@ function StarWarsApi({characterNumber}){
 
   if (character.homeworld == "https://swapi.dev/api/planets/1/"){
     character.homeworld = "Tatooine"
+  }
+
+  if (character.homeworld == "https://swapi.dev/api/planets/42/"){
+    character.homeworld = "Haruun Kal"
   }
 
   if (character.homeworld == "https://swapi.dev/api/planets/20/"){
