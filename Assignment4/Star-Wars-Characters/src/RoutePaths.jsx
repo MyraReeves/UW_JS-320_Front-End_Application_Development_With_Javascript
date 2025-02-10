@@ -8,6 +8,7 @@ import chewbacca from './images/chewbacca.png'
 import han from './images/han.png'
 import leia from './images/leia.png'
 import luke from './images/luke.png'
+import mace from './images/mace.png'
 import obiwan from './images/obi-wan.png'
 import r2d2 from './images/r2d2.png'
 import rey from './images/rey.png'
@@ -60,6 +61,14 @@ function RoutePaths() {
     </div>
   }
 
+  const Mace = () => {
+    return <div className='character-info'>
+      <img src={mace} alt='Image of Mace Windu' />
+      <StarWarsApi characterNumber = '51' /><br/>
+      <Link to='/'>	🏠︎ Return to Character Index 🏠︎</Link>
+    </div>
+  }
+
   const Obiwan = () => {
     return <div className='character-info'>
       <img src={obiwan} alt='Image of Obi-Wan Kenobi' />
@@ -102,6 +111,7 @@ function RoutePaths() {
       <Route path='/han-solo' element={<Han />}/>
       <Route path='/leia-organa' element={<Leia />}/>
       <Route path='/luke-skywalker' element={<Luke />}/>
+      <Route path='mace' element={<Mace />}/>
       <Route path='obiwan-kenobi' element={<Obiwan />}/>
       <Route path='/r2-d2' element={<R2D2 />}/>
       <Route path='/rey' element={<Rey />}/>
