@@ -8,6 +8,7 @@ function StarWarsApi({characterNumber}){
 
   useEffect( () => {
     fetch(`https://swapi.dev/api/people/${characterNumber}/`)
+    // fetch(`https://api.github.com/users/${characterNumber}`)
       .then( response => response.json() )
       .then( data => {
         setCharacter(data)
@@ -23,8 +24,12 @@ function StarWarsApi({characterNumber}){
     character.gender = ""
   }
 
+  if (character.species == "https://swapi.py4e.com/api/species/1/"){
+    character.species = "human"
+  }
+
   if (character.species == "https://swapi.dev/api/species/3/"){
-    character.species = "Wookie"
+    character.species = "wookie"
   }
 
   if (character.species == "https://swapi.dev/api/species/2/"){
@@ -43,8 +48,20 @@ function StarWarsApi({characterNumber}){
     character.homeworld = "Kashyyyk"
   }
 
+  if (character.homeworld == "https://swapi.dev/api/planets/22/"){
+    character.homeworld = "Corellia"
+  }
+
+  if (character.homeworld == "https://swapi.dev/api/planets/2/"){
+    character.homeworld = "Alderaan"
+  }
+
   if (character.homeworld == "https://swapi.dev/api/planets/1/"){
     character.homeworld = "Tatooine"
+  }
+
+  if (character.homeworld == "https://swapi.dev/api/planets/20/"){
+    character.homeworld = "Stewjon"
   }
 
   if (character.homeworld == "https://swapi.dev/api/planets/8/"){
