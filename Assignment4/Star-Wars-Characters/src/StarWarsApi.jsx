@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 function StarWarsApi({characterNumber}){
   const [character, setCharacter] = useState(undefined)
   const [loading, setLoading] = useState(true)
+  const [hasError, setHasError] = useState(false)
 
 
   useEffect( () => {
@@ -11,20 +12,33 @@ function StarWarsApi({characterNumber}){
     // fetch(`https://api.github.com/users/${characterNumber}`)
       .then( response => response.json() )
       .then( data => {
-        setCharacter(data)
-        setLoading(false)
-      })
+        setCharacter(data);
+        setLoading(false);
+      }, error => {console.log(error)} )
+      .catch( () => {
+        setLoading(false);
+        setHasError(true);
+      } )
+      // .finally( () => {
+      //   setLoading(false)
+      // } )
+
   }, [characterNumber] )
 
   if (loading) {
     return <h3>Loading information...</h3>
   }
 
+  if (hasError) {
+    return <h3>An error occurred.  Sorry!  Please check the console for further details.</h3>
+  }
+
+
   if (character.gender == "n/a"){
     character.gender = ""
   }
 
-  if (character.species == "https://swapi.py4e.com/api/species/1/" || character.species == []){
+  if (character.species == "https://swapi.py4e.com/api/species/1/" || character.species == ''){
     character.species = "human"
   }
 
@@ -76,12 +90,14 @@ function StarWarsApi({characterNumber}){
     character.homeworld = "Dagobah later in his life (when in exile), but his original home planet remains unknown"
   }
 
+
   return (
   <>
     <p><span className="character-name">{character.name}</span> is a {character.height} centimeters tall {character.gender} {character.species} with {character.hair_color} hair and {character.eye_color} eyes from the planet {character.homeworld}.
     </p>
   </>)
 }
+
 
 StarWarsApi.propTypes = {
   characterNumber: PropTypes.number.isRequired
