@@ -25,37 +25,73 @@ h3 {
   color: white;
 }
 
+p {
+  color: gold;
+  font-size: 20pt;
+  font-family: "Papyrus";
+  font-weight: bold;
+}
+
+.blue {
+  background: linear-gradient(0deg, #ffffff 0%, #67bea0 40%, #59a6ff 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.red {
+  background: linear-gradient(0deg, #ffffff 0%, #b84b89 40%, #ba0000 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .character-index {
   margin-top: 200px;
   text-align: center;
 }
 
-.character-index p {
+.villian-index {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.character-index p, .villian-index p {
   text-decoration: underline;
   text-align: left;
   margin-bottom: 0;
   margin-left: 50px;
 }
 
-.linkToEachCharacter {
+.linkToEachCharacter, .linkToEachCharacter2 {
   text-align: center;
   margin: 20px;
-  border: rgb(55, 203, 240) solid 1px;
-  box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 lightblue;
   padding: 20px;
   width: 200px;
 }
 
-.linkToEachCharacter img {
+.linkToEachCharacter {
+  border: rgb(55, 203, 240) solid 1px;
+  box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 lightblue;
+}
+
+.linkToEachCharacter2 {
+  border: red solid 1px;
+  box-shadow: 0 4px 8px 0 pink, 0 6px 20px 0 pink;
+}
+
+.linkToEachCharacter img, .linkToEachCharacter2 img {
   height: 200px;
 }
 
-.linkToEachCharacter h2 {
+.linkToEachCharacter h2, .linkToEachCharacter2 h2 {
   color: black;
   text-shadow: -1px 0 gold, 0 1px goldenrod, 1px 0 gold, 0 -1px goldenrod;
 }
 
-.linkToEachCharacter:hover {
+.linkToEachCharacter:hover, .linkToEachCharacter2:hover {
   background-color: rgb(23, 23, 23);
   cursor: pointer;
 }
@@ -73,12 +109,6 @@ h3 {
 
 .character-info img {
   height: 300px;
-}
-
-p {
-  color: gold;
-  font-size: 16pt;
-  font-family: "Papyrus";
 }
 
 .character-name {
