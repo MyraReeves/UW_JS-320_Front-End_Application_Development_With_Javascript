@@ -21,6 +21,10 @@ body {
   background-color: black;
 }
 
+h3 {
+  color: white;
+}
+
 .character-index {
   margin-top: 200px;
   text-align: center;
