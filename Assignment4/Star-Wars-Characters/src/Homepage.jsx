@@ -7,7 +7,7 @@ function Homepage() {
 
   return (
     <div className='character-index'>
-      <p>In alphabetical order:</p>
+      <p className='blue'>Heroes:</p>
       {characters.map( (characters, index) => (
 
         <div className="linkToEachCharacter" key={index} style={{display: 'inline-block'}} onClick={() => navigate(characters.page)}>
