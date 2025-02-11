@@ -9,6 +9,7 @@ function StarWarsApi({characterNumber}){
 
   useEffect( () => {
     fetch(`https://swapi.dev/api/people/${characterNumber}/`)
+    // fetch(`https://api.github.com/users/${characterNumber}`)
       .then( response => response.json() )
       .then( data => {
         setCharacter(data);
@@ -53,6 +54,10 @@ function StarWarsApi({characterNumber}){
     character.species = "of unknown species"
   }
 
+  if (character.species == "https://swapi.dev/api/species/22/"){
+    character.species = "zabrak"
+  }
+
   if (character.hair_color == "n/a" || character.hair_color == "none"){
     character.hair_color = "no"
   }
@@ -87,6 +92,14 @@ function StarWarsApi({characterNumber}){
 
   if (character.homeworld == "https://swapi.dev/api/planets/28/"){
     character.homeworld = "Dagobah later in his life (when in exile), but his original home planet remains unknown"
+  }
+
+  if (character.homeworld == "https://swapi.dev/api/planets/10/"){
+    character.homeworld = "Kamino"
+  }
+
+  if (character.homeworld == "https://swapi.dev/api/planets/36/"){
+    character.homeworld = "Dathomir"
   }
 
   if (character.height == null){
