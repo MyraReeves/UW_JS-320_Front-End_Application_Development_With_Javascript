@@ -1,0 +1,32 @@
+[
+  {
+    "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/BobaFett.png?raw=true",
+    "name": "Boba Fett",
+    "page": "boba-fett",
+    "number": "22"
+  },
+  {
+    "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/maul.png?raw=true",
+    "name": "Darth Maul",
+    "page": "maul",
+    "number": "44"
+  },
+  {
+    "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/vader.png?raw=true",
+    "name": "Darth Vader",
+    "page": "vader",
+    "number": "4"
+  },
+  {
+    "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/KyloRen.png?raw=true",
+    "name": "Kylo Ren",
+    "page": "kylo-ren",
+    "number": "89"
+  },
+  {
+    "image": "https://github.com/MyraReeves/UW_JS-320_Front-End_Application_Development_With_Javascript/blob/main/Assignment4/Star-Wars-Characters/src/images/palpatine.png?raw=true",
+    "name": "Sheev Palpatine",
+    "page": "palpatine",
+    "number": "21"
+  }
+]
