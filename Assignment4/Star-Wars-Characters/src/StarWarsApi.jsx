@@ -9,7 +9,6 @@ function StarWarsApi({characterNumber}){
 
   useEffect( () => {
     fetch(`https://swapi.dev/api/people/${characterNumber}/`)
-    // fetch(`https://api.github.com/users/${characterNumber}`)
       .then( response => response.json() )
       .then( data => {
         setCharacter(data);
@@ -88,6 +87,10 @@ function StarWarsApi({characterNumber}){
 
   if (character.homeworld == "https://swapi.dev/api/planets/28/"){
     character.homeworld = "Dagobah later in his life (when in exile), but his original home planet remains unknown"
+  }
+
+  if (character.height == null){
+    return (<p>Information about this character has not yet been added to the original SWAPI.dev website. ☹️ Sorry!</p>)
   }
 
 
