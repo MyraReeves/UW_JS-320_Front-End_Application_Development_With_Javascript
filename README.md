@@ -4,6 +4,8 @@ Below are my school assignments from the 2025 Winter quarter of the University o
 
 <br>
 
+* [Assignment 5 - Final Project Planning](./Assignment5/README.md)
+
 * [Assignment 4 - Star Wars Character Database](./Assignment4/README.md) -- Using an API in React & using Routes
 
 * [Assignment 3 - Vacation Rental page](./Class3/README.md) -- Practice creating a mock E-commerce user interface
