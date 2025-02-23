@@ -9,19 +9,16 @@ function StarWarsApi({characterNumber}){
 
   useEffect( () => {
     fetch(`https://swapi.dev/api/people/${characterNumber}/`)
-    // fetch(`https://api.github.com/users/${characterNumber}`)
       .then( response => response.json() )
       .then( data => {
         setCharacter(data);
-        setLoading(false);
       }, error => {console.log(error)} )
       .catch( () => {
-        setLoading(false);
         setHasError(true);
       } )
-      // .finally( () => {
-      //   setLoading(false)
-      // } )
+      .finally( () => {
+        setLoading(false)
+      } )
 
   }, [characterNumber] )
 
