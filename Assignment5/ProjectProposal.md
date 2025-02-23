@@ -2,6 +2,10 @@
 
 A fan website for the tv show "Black Sails"
 
+## Basic Info:
+
+**Title:**
+
 **Elevator Pitch:**
 
 ## APIs:
@@ -10,7 +14,15 @@ A fan website for the tv show "Black Sails"
 
 ## Other Dependencies
 
+* Embeddable podcast player widget provided free from [Elfsight](https://elfsight.com/)
+
 ## Tasks to be completed:
+
+## Plan:
+
+## Header:
+
+The header will appear on all pages of the website.  It will consists of a title image and a dropdown menu.  The title image will be a link that will lead back to the homepage when clicked on.  The dropdown menu will contain links to all of the pages of the website.
 
 ## Homepage:
 
@@ -18,17 +30,23 @@ The homepage will use the ["Episodes List" section of the TVMaze API](https://ap
 
 The videos will be season preview trailers, using the "embed" codes provided by YouTube.
 
-![Wirefram of Homepage](./images/Homepage.png)
+### Wireframe:
+
+![Wireframe of Homepage](./images/Homepage.png)
 
 ## Stats page:
 
 The contents of this page will make use of the ["Show main information"](https://api.tvmaze.com/shows/182) section of the TVMaze API.
+
+### Wireframe:
 
 ![Wireframe of stats page](./images/Stats.jpg)
 
 ## Cast  page:
 
 Images and some basic information about each actor will be displayed by using the ["Cast"](https://api.tvmaze.com/shows/182/cast) section of the TVMaze API.
+
+### Wireframe:
 
 ![Wireframe of Cast page](./images/Cast.jpg)
 
@@ -40,4 +58,10 @@ TVMaze has summary description paragraphs about each character [(example)](https
 
 Clicking on a character's image on this page will lead to another page with that information about the character, similar to how the Star Wars homework assignment operated.
 
+### Wireframe:
+
 ![Wireframe of Characters page](./images/Characters.jpg)
+
+## Podcast page
+
+When asked what sort of content they would most want on a fansite for a tv show, a friend answered that she would enjoy learning more behind-the-scenes insights from the writers and cast.  Thankfully, the ["Fathoms Deep" podcast](https://commonroomradio.com/podcasts/fathoms-deep/) did just that for this show by interviewing the producers, writers, cast, and others! Since [Elfsight](https://elfsight.com/) offers a free widget that can easily embed a podcast player onto a website, I will use that to provide access to listen to the "Fathoms Deep" podcast on this page.
