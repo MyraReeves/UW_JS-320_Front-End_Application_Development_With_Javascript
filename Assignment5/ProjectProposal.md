@@ -12,6 +12,7 @@ A fan website for the tv show "Black Sails"
 
 * [TVMaze API](https://www.tvmaze.com/api)
 * [REST Countries](https://restcountries.com/)
+* Random pirate greeting API (Most likely will need to be created by myself since I haven't yet found a CORS-compliant one)
 
 ## Other Dependencies
 
@@ -81,6 +82,12 @@ Clicking on a character's image on this page will lead to another page with that
 
 ## Podcast page
 
-When asked what sort of content they would most want on a fansite for a tv show, a friend answered that she would enjoy learning more behind-the-scenes insights from the writers and cast.  Thankfully, the ["Fathoms Deep" podcast](https://commonroomradio.com/podcasts/fathoms-deep/) did just that for this show by interviewing the producers, writers, cast, and others! Since [Elfsight](https://elfsight.com/) offers a free widget that can easily embed a podcast player onto a website, I will use that to provide access to listen to the "Fathoms Deep" podcast on this page.
+When asked what sort of content she would most want on a fansite for a tv show (in general), a friend answered that she would enjoy learning more behind-the-scenes insights from the writers and cast.  Thankfully, the ["Fathoms Deep" podcast](https://commonroomradio.com/podcasts/fathoms-deep/) did just that for this show by interviewing the producers, writers, cast, and others! Since [Elfsight](https://elfsight.com/) offers a free widget that can easily embed a podcast player onto a website, I will use that to provide access to listen to the "Fathoms Deep" podcast on this page.
+
+### Wireframe:
 
 ![Wireframe of Podcast page](./images/Podcast.jpg)
+
+## Learning page
+
+When asked what sort of content he would most want on a fansite for "Black Sails" (in specific), a different friend answered that he would enjoy learning more about the historical figures who were portrayed in the show.
