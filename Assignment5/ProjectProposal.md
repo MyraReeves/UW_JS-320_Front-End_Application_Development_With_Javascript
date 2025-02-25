@@ -4,7 +4,7 @@ A fan website for the tv show "Black Sails"
 
 ## Basic Info:
 
-**Title:**
+**Title:** _"Governor Augustus Featherstone's Complete and Accurate, Totally Fictional Journal of Who's Who in Nassau Town Circa 1715."_
 
 **Elevator Pitch:**
 
@@ -12,11 +12,13 @@ A fan website for the tv show "Black Sails"
 
 * [TVMaze API](https://www.tvmaze.com/api)
 * [REST Countries](https://restcountries.com/)
+* [Library of Congress API ??](https://www.loc.gov/apis/)
 * Random pirate greeting API (Most likely will need to be created by myself since I haven't yet found a CORS-compliant one)
 
 ## Other Dependencies
 
 * Embeddable podcast player widget provided free from [Elfsight](https://elfsight.com/)
+* Firebase
 
 ## Tasks to be completed:
 
