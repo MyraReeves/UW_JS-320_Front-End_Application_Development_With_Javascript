@@ -68,3 +68,7 @@ Above are the requirements for the project. For this week however, you'll need t
 1. Add your project name, elevator pitch, wireframes, dependencies, task list, and plan to the GitHub repo (you can add a markdown file + images or links to images)
 2. Create a pull request
 3. Create a zip file of your repo for submission to Canvas.
+
+## Grading
+
+![Screenshot of grading criteria](./images/GradingCriteria.jpg)
