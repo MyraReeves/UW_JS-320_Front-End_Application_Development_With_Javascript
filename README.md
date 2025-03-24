@@ -21,3 +21,5 @@ Below are my school assignments from the 2025 Winter quarter of the University o
 <br>
 
 ![image of the badge earned](https://api.badgr.io/public/assertions/QMN4p07AQjeZtn015RuffA/image)
+
+![screenshot of my final grade](finalGrades.jpg)
